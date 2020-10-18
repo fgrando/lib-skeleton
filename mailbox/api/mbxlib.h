@@ -1,9 +1,10 @@
 #ifndef MBXLIB_H_INCLUDED
 #define MBXLIB_H_INCLUDED
 
+#ifndef MBX_NOINCLUDE
 #include <stdint.h>
 #include <cstddef>
-
+#endif
 //
 // Version (32 bits)
 // [major| minor| patch]
@@ -12,7 +13,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 #define MBX_VERSION_MAJOR 0
 #define MBX_VERSION_MINOR 1
-#define MBX_VERSION_PATCH 0
+#define MBX_VERSION_PATCH 1
 #define MBX_VERSION ((MBX_VERSION_MAJOR << 24) | (MBX_VERSION_MINOR << 12) | MBX_VERSION_PATCH)
 #define MBX_VERSION_BUILD_STR __DATE__##" "##__TIME__
 
